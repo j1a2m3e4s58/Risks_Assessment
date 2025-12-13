@@ -1,0 +1,36 @@
+{% extends "admin/change_list.html" %}
+
+{% block content %}
+<div style="margin-bottom: 20px; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); color: #333333 !important;">
+    
+    <h3 style="margin-top: 0; margin-bottom: 15px; color: #1a237e !important; font-weight: bold; border-bottom: 2px solid #eee; padding-bottom: 10px;">
+        Risk Matrix Legend
+    </h3>
+    
+    <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+        
+        <div style="display: flex; align-items: center;">
+            <span style="display: inline-block; width: 24px; height: 24px; background-color: #d32f2f; margin-right: 10px; border-radius: 4px; border: 1px solid #ccc;"></span>
+            <strong style="color: #333; font-size: 16px;">Critical (Very High)</strong>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+            <span style="display: inline-block; width: 24px; height: 24px; background-color: #f57c00; margin-right: 10px; border-radius: 4px; border: 1px solid #ccc;"></span>
+            <strong style="color: #333; font-size: 16px;">Severe (High)</strong>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+            <span style="display: inline-block; width: 24px; height: 24px; background-color: #fbc02d; margin-right: 10px; border-radius: 4px; border: 1px solid #ccc;"></span>
+            <strong style="color: #333; font-size: 16px;">Moderate (Medium)</strong>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+            <span style="display: inline-block; width: 24px; height: 24px; background-color: #388e3c; margin-right: 10px; border-radius: 4px; border: 1px solid #ccc;"></span>
+            <strong style="color: #333; font-size: 16px;">Sustainable (Low)</strong>
+        </div>
+
+    </div>
+</div>
+
+{{ block.super }}
+{% endblock %}
